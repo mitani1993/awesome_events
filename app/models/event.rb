@@ -1,4 +1,5 @@
 class Event < ApplicationRecord
+  has_many :tickets
   belongs_to :owner, class_name: "User"
 
   with_options presence: true do
